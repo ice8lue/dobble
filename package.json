@@ -1,0 +1,6 @@
+{
+  "workspaces": [
+    "generator"
+  ],
+  "private": true
+}
