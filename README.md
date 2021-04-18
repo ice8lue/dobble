@@ -1,6 +1,6 @@
 # Dobble
 
-This repo includes a simple implementation of the game "Dobble".
+This repo includes a simple implementation of the game "Dobble", a card game with symbols on each card. Players need to quickly find the one shared symbol.
 
 ## Rules of the game
 
