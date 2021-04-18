@@ -7,9 +7,9 @@
  * - each card is unique
  */
 
-export function generateCards(symbolsPerCard: number = 8): number[][] {
+export function generateCards (symbolsPerCard: number = 8): number[][] {
   const N = symbolsPerCard - 1
-  const amountOfCards: number = totalAmountOfCards(symbolsPerCard);
+  const amountOfCards: number = totalAmountOfCards(symbolsPerCard)
   const symbols: number[] = [...Array(amountOfCards).keys()].map(n => n + 1) // Use numbers as symbols for simplicity
 
   const cards: number[][] = []
@@ -49,20 +49,20 @@ export function generateCards(symbolsPerCard: number = 8): number[][] {
   return cards
 }
 
-export function isPrime(n: number): boolean {
+export function isPrime (n: number): boolean {
   for (let i = 2; i < n; i++) {
-    if (n % i === 0) return false;
+    if (n % i === 0) return false
   }
 
-  return n > 1;
+  return n > 1
 }
 
-export function totalAmountOfCards(symbolsPerCard: number = 8): number {
+export function totalAmountOfCards (symbolsPerCard: number = 8): number {
   const N = symbolsPerCard - 1
 
   if (!isPrime(N)) {
-    throw new Error('Invalid number of symbols per Card. This may only be used with a prime number + 1.');
+    throw new Error('Invalid number of symbols per Card. This may only be used with a prime number + 1.')
   }
 
-  return N * N + N + 1; // N^2 + N + 1
+  return N * N + N + 1 // N^2 + N + 1
 }
