@@ -1,4 +1,4 @@
-name: CI
+name: Continuous Integration
 
 on:
   push:
@@ -7,10 +7,10 @@ on:
     branches: [ main ]
     
 env:
-  NODE_VERSION: 12.x
+  NODE_VERSION: 14.x
 
 jobs:
-  build:
+  CI:
 
     runs-on: ubuntu-latest
 
